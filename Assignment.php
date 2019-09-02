@@ -4,7 +4,10 @@ echo "1. Work on the type Casting <br>";
 
 $i=65;
 
-echo "The ASCII character corresponding to $i is : ".chr($i)."<br><br>";   // is printing the character corresponding to the ASCII value
+echo "The ASCII character corresponding to $i is : ".chr($i)."<br>";   // is printing the character corresponding to the ASCII value
+
+$f=6.8;
+echo "The floating number $f is changed in integer :".(int)$f."<br><br>";
 
 echo "2. Creating the multi-dimensional arrays  <br>              
                11 12 13 <br>
@@ -319,6 +322,25 @@ for($i=0;$i<count($descending);$i++)
 }
 echo "<br><br>";
 
+echo "Do the below examples with the foreach iterator <br>";
+
+echo "13.   Check the multi-dimensional associate array. <br>";
+
+//foreach ( $array as $key => $value ){
+
+  //              …….
+
+//}
+
+//Ex: $personal_details=array("name" => "Payal", "occupation" => "Engineer", age => 23, "country" => "India");
+
+$personal_details=array("name" => "Payal", "occupation" => "Engineer", "age" => "23", "country" => "India");
+
+foreach($personal_details as $attribute=>$value)
+{
+	echo $attribute."=>".$value."<br>";
+}
+echo "<br>";
 echo "<br>14. Create an array <br>";
 
 echo "a['fruits'] = [ 'apple', 'orange', 'kiwi' ];<br>";
@@ -331,24 +353,10 @@ echo "Print all values using the foreach*/<br>";
 
 $a=array("apple"=>"1","orange"=>"2","kiwi"=>"3");
 //$a['numbers'] = array(1 , 2 , 3 );
-//$a['hobbies'] = array('cricket', 'Music', 'tennis');
+//$a['hobbies'] = array('cricket', 'Music', 'tennis');s
 
 foreach($a as $fruits=>$quantity)
 {
 	echo $fruits. "=>".$quantity."<br>";
 }
 ?>
-Do the below examples with the foreach iterator
-
-13.   Check the multi-dimensional associate array.
-
-foreach ( $array as $key => $value ){
-
-                …….
-
-}
-
-Ex: $personal_details=array("name" => "Payal", "occupation" => "Engineer", age => 23, "country" => "India");
-
- 
-
